@@ -4,7 +4,7 @@
 # 2018-01-15
 # linux trash
 
-if [ -e "/tmp/1qz2wsx123zxc" ]
+if [ -e "/tmp/e915eecd-9290-4231-8b2f-d8212498cb9e" ]
 then
     echo "You have already run this scripts, will exit"
     exit
@@ -42,5 +42,5 @@ chmod +x gitrm
 
 cp -rp gitrm /bin/rm
 
-touch /tmp/1qz2wsx123zxc
+touch /tmp/e915eecd-9290-4231-8b2f-d8212498cb9e
 
