@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# zhengsenlin@gmail.com
+# 2018-01-15
+
+if [ $# -le 1 ]
+then
+    echo "ARGV Number Error"
+    exit
+fi
+
+if [ ! -d  "/.trash" ]
+then
+    mkdir /.trash
+fi
+
+mv "$@" /.trash/
+
+find /.trash/ -mtime +7 -exec /bin/rmm -rf {} \;
+
+
