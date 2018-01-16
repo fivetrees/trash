@@ -32,7 +32,7 @@ then
     mkdir /.trash
 fi
 
-mv "$@" /.trash/
+/bin/mv "$@" /.trash/
 
 find /.trash/ -mtime +7 -exec /bin/rmm -rf {} \;
 
